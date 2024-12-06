@@ -5,7 +5,7 @@ print("\n6. 영화 정보")
 let count: Int = .random(in: 1...200)
 let runtime = count * 123
 let genrelist = ["Romance", "SF", "Thriller", "Action", "Comedy"]
-let genre = genrelist.randomElement()!
+let genre = genrelist.randomElement() ?? "장르 없음"
 let rate: Double = .random(in: 1...5)
 
 print("""
